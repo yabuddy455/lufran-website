@@ -1,15 +1,13 @@
-# Lufran International Corp — Static Website (Homepage)
+# Lufran Website — Homepage v2
 
-## What’s included
-- `index.html` (homepage)
-- `assets/css/styles.css` (styles)
-- `assets/img/` (logo + placeholder images you can replace)
-- `assets/video/README.txt` (instructions for adding a hero video later)
+## Highlights
+- Bigger/crisper logo
+- Home link + Services dropdown
+- Trade-lanes section removed (worldwide coverage messaging instead)
+- About preview section added
+- New hero + service images in assets/img
+- Simple EN/ES toggle (client-side). Best SEO later: separate /es pages.
 
-## Replace these placeholders
-- Phone number: search `+1XXXXXXXXXX`
-- Email: search `info@yourdomain.com`
-- Images: replace files in `assets/img/` with your real photos (keep filenames the same)
-
-## Local preview
-Open `index.html` in your browser.
+## Replace placeholders
+- Phone: +1XXXXXXXXXX
+- Email: info@yourdomain.com
