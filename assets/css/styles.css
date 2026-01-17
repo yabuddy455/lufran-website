@@ -69,7 +69,7 @@ img{ max-width:100%; display:block; }
   padding:12px 0;
 }
 .brand{ display:flex; align-items:center; gap:12px; min-width:240px; }
-.brand img{ height:56px; width:auto; }
+.brand img{ height:80px; width:auto; }
 .nav-links{ display:flex; align-items:center; gap:8px; font-weight:900; color:#1b2333; }
 .nav-links a{
   padding:10px 12px;
