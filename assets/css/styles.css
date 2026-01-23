@@ -16,9 +16,10 @@ html,body{ margin:0; padding:0; }
 body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   color:var(--ink);
-  background: radial-gradient(1200px 800px at 80% 0%, rgba(10,58,138,.06), transparent 60%),
-              radial-gradient(900px 700px at 10% 15%, rgba(7,26,58,.05), transparent 60%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 800px at 80% 0%, rgba(10,58,138,.06), transparent 60%),
+    radial-gradient(900px 700px at 10% 15%, rgba(7,26,58,.05), transparent 60%),
+    var(--bg);
   line-height:1.55;
 }
 
@@ -50,17 +51,13 @@ img{ max-width:100%; display:block; }
   color:#fff;
   border-color:rgba(255,255,255,.12);
 }
-.btn.ghost{
-  background:rgba(255,255,255,.0);
-}
+.btn.ghost{ background:rgba(255,255,255,0); }
 .btn.ghost.on-dark{
   color:#fff;
   border-color:rgba(255,255,255,.28);
   background:rgba(255,255,255,.06);
 }
-.btn.ghost.on-dark:hover{
-  background:rgba(255,255,255,.12);
-}
+.btn.ghost.on-dark:hover{ background:rgba(255,255,255,.12); }
 
 /* Navbar */
 .nav{
@@ -78,15 +75,9 @@ img{ max-width:100%; display:block; }
   gap:16px;
   padding:10px 0;
 }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.brand img{
-  height:58px; /* adjust here if you want */
-  width:auto;
-}
+.brand{ display:flex; align-items:center; gap:10px; }
+.brand img{ height:58px; width:auto; }
+
 .nav-links{
   display:flex;
   align-items:center;
@@ -103,16 +94,10 @@ img{ max-width:100%; display:block; }
   color:rgba(15,23,42,.86);
   transition: background .15s ease;
 }
-.nav-link:hover{
-  background:rgba(15,23,42,.06);
-}
+.nav-link:hover{ background:rgba(15,23,42,.06); }
 .caret{ font-size:12px; opacity:.75; }
 
-.nav-cta{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
+.nav-cta{ display:flex; align-items:center; gap:10px; }
 .hamburger{
   display:none;
   border:1px solid rgba(15,23,42,.14);
@@ -137,9 +122,7 @@ img{ max-width:100%; display:block; }
   padding:8px;
   display:none;
 }
-.dropdown:hover .dropdown-menu{
-  display:block;
-}
+.dropdown:hover .dropdown-menu{ display:block; }
 .dropdown-menu a{
   display:flex;
   flex-direction:column;
@@ -149,9 +132,7 @@ img{ max-width:100%; display:block; }
 }
 .dropdown-menu a b{ font-size:14px; }
 .dropdown-menu a span{ font-size:12px; color:rgba(15,23,42,.65); }
-.dropdown-menu a:hover{
-  background:rgba(10,58,138,.06);
-}
+.dropdown-menu a:hover{ background:rgba(10,58,138,.06); }
 
 /* Mobile menu */
 .mobile-menu{
@@ -293,7 +274,11 @@ img{ max-width:100%; display:block; }
 
 /* Sections */
 .section{ padding:56px 0; }
-.section.alt{ background:rgba(15,23,42,.02); border-top:1px solid rgba(15,23,42,.06); border-bottom:1px solid rgba(15,23,42,.06); }
+.section.alt{
+  background:rgba(15,23,42,.02);
+  border-top:1px solid rgba(15,23,42,.06);
+  border-bottom:1px solid rgba(15,23,42,.06);
+}
 .section-head{
   display:flex;
   align-items:flex-end;
@@ -348,9 +333,7 @@ img{ max-width:100%; display:block; }
   background-size:cover;
   background-position:center;
 }
-.service-body{
-  padding:14px 16px 16px;
-}
+.service-body{ padding:14px 16px 16px; }
 .service-body h3{ margin:0 0 8px; font-size:16px; }
 .service-body p{ margin:0; color:var(--muted); font-size:14px; }
 
@@ -397,9 +380,7 @@ img{ max-width:100%; display:block; }
   justify-content:space-between;
   gap:16px;
 }
-.cta-band.big{
-  padding:22px;
-}
+.cta-band.big{ padding:22px; }
 .cta-band h2, .cta-band h3, .cta-band h4{ margin:0 0 6px; }
 .cta-band p{ margin:0; color:var(--muted); font-size:14px; }
 
