@@ -4,23 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lufran International Corp | Export Freight Forwarding & Customs Brokerage</title>
-  <meta name="description" content="Miami-based export freight forwarder and licensed U.S. Customs Broker. Door-to-door logistics worldwide, with deep experience shipping into the Caribbean and Central America since 1998." />
+  <meta name="description" content="Miami-based export freight forwarder and licensed U.S. Customs Broker. Door-to-door logistics worldwide." />
 
+  <!-- Favicons (use yours) -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="assets/img/webclip-256.png">
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- Trust bar (licenses & certifications) -->
-  <style>
-    .trustbar{ padding:18px 0; border-top:1px solid rgba(15,23,42,.08); border-bottom:1px solid rgba(15,23,42,.08); background:rgba(15,23,42,.02); }
-    .trustbar .trustbar-title{ margin:0 0 10px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:rgba(15,23,42,.75); }
-    .trustbar-logos{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:space-between; }
-    .trustbar-logos img{ max-height:44px; width:auto; filter:saturate(.95) contrast(1.02); opacity:.95; }
-    @media (max-width:700px){ .trustbar-logos{ justify-content:flex-start; } .trustbar-logos img{ max-height:38px; } }
-  </style>
-
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html" aria-label="Lufran International Corp home">
@@ -28,398 +23,309 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
 
-        <div class="dropdown" aria-label="Services dropdown">
-          <button type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_services">Services ▾</button>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="services/index.html" aria-haspopup="true" aria-expanded="false">
+            Services <span class="caret">▾</span>
+          </a>
           <div class="dropdown-menu" role="menu" aria-label="Services menu">
             <a href="services/ocean-freight.html" role="menuitem">
-              <b data-i18n="svc_ocean">Ocean Freight (FCL/LCL)</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_ocean_sub">Export coordination, cutoffs, documentation</span>
+              <b>Ocean Freight (FCL/LCL)</b><span>Export coordination, cutoffs, documentation</span>
             </a>
             <a href="services/air-freight.html" role="menuitem">
-              <b data-i18n="svc_air">Air Freight</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_air_sub">Time-critical shipping and handling</span>
+              <b>Air Freight</b><span>Time-critical shipping and handling</span>
             </a>
             <a href="services/customs-brokerage.html" role="menuitem">
-              <b data-i18n="svc_broker">Customs Brokerage</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_broker_sub">Compliance-first brokerage support</span>
+              <b>Customs Brokerage</b><span>Compliance-first brokerage support</span>
             </a>
             <a href="services/warehousing.html" role="menuitem">
-              <b data-i18n="svc_wh">Warehousing &amp; Consolidation</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_wh_sub">Receiving, staging, consolidation</span>
+              <b>Warehousing &amp; Consolidation</b><span>Receiving, staging, consolidation</span>
             </a>
             <a href="services/door-to-door.html" role="menuitem">
-              <b data-i18n="svc_d2d">Door-to-Door Logistics</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_d2d_sub">Pickup to final delivery coordination</span>
+              <b>Door-to-Door Logistics</b><span>Pickup to final delivery coordination</span>
             </a>
             <a href="services/special-cargo.html" role="menuitem">
-              <b data-i18n="svc_special">Vehicles &amp; Hazardous Cargo</b>
-              <span style="font-size:12px; color:var(--muted);" data-i18n="svc_special_sub">Special handling when applicable</span>
+              <b>Vehicles &amp; Hazardous Cargo</b><span>Special handling when applicable</span>
             </a>
           </div>
         </div>
 
-        <a href="about.html" data-i18n="nav_about">About Us</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </nav>
 
       <div class="nav-cta">
-        <button id="langToggle" class="lang" type="button" aria-label="Language switch">EN / ES</button>
-        <a class="btn primary" href="quote.html" data-i18n="nav_quote">Request a Quote</a>
-        <a class="btn ghost mobile-only" href="#menu" aria-label="Open menu (placeholder)">Menu</a>
+        <a class="btn primary" href="quote.html">Request a Quote</a>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" hidden>
+      <a href="index.html">Home</a>
+      <details>
+        <summary>Services</summary>
+        <div class="mobile-sub">
+          <a href="services/ocean-freight.html">Ocean Freight (FCL/LCL)</a>
+          <a href="services/air-freight.html">Air Freight</a>
+          <a href="services/customs-brokerage.html">Customs Brokerage</a>
+          <a href="services/warehousing.html">Warehousing &amp; Consolidation</a>
+          <a href="services/door-to-door.html">Door-to-Door Logistics</a>
+          <a href="services/special-cargo.html">Vehicles &amp; Hazardous Cargo</a>
+        </div>
+      </details>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn primary" href="quote.html" style="justify-content:center;">Request a Quote</a>
     </div>
   </header>
 
-  <main class="hero">
+  <!-- HERO -->
+  <main class="hero" aria-label="Hero">
     <div class="container">
-      <div class="hero-grid">
-        <section class="hero-main" aria-label="Hero">
-          <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="pill">Established 1998 • Miami, FL • Licensed &amp; Compliant</span>
 
-          <div class="hero-content">
-            <div>
-              <span class="pill" data-i18n="hero_pill">Established 1998 • Miami, FL • Licensed &amp; Compliant</span>
+        <h1>Miami Export Freight Forwarding<br />&amp; U.S. Customs Brokerage</h1>
 
-              <h1 data-i18n="hero_h1">Miami Export Freight Forwarding<br />&amp; U.S. Customs Brokerage</h1>
+        <p class="lead">
+          Full-service, door-to-door logistics solutions connecting U.S. exporters to Central America,
+          the Caribbean, and worldwide markets — with clear communication at every step.
+        </p>
 
-              <p class="lead" data-i18n="hero_lead">
-                Door-to-door ocean and air solutions worldwide — with deep experience shipping into the Caribbean and Central America.
-              </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="quote.html">Request a Quote</a>
+          <a class="btn ghost on-dark" href="services/index.html">Explore Services</a>
+        </div>
 
-              <div class="trust-row" aria-label="Credentials">
-                <span class="trust-chip">FMC Licensed</span>
-                <span class="trust-chip">NVOCC</span>
-                <span class="trust-chip">U.S. Customs Broker</span>
-                <span class="trust-chip" data-i18n="trust_world">Worldwide Coverage</span>
-              </div>
-
-              <p style="margin:14px 0 0; color:rgba(255,255,255,.80); font-size:13px;" data-i18n="hero_lanes">
-                Common destinations we handle often: Dominican Republic • El Salvador • Costa Rica (and many more).
-              </p>
-
-              <div class="hero-actions">
-                <a class="btn primary" href="quote.html" data-i18n="cta_quote">Request a Quote</a>
-                <a class="btn ghost" href="tel:+1XXXXXXXXXX" data-i18n="cta_call">Call for a Fast Quote</a>
-              </div>
-            </div>
-
-            <p style="margin:0; color:rgba(255,255,255,.72); font-size:13px;" data-i18n="hero_footer">
-              Clear communication, accurate documentation, and proactive coordination from pickup to delivery.
-            </p>
-          </div>
-        </section>
-
-        <aside class="side-card" aria-label="Quick services overview">
-          <div>
-            <h2 data-i18n="side_title">What we handle</h2>
-            <p data-i18n="side_sub">A quick overview — each service has a dedicated page with the process and what we need to quote.</p>
-
-            <div class="kv" role="list">
-              <a class="item" role="listitem" href="services/ocean-freight.html"><span data-i18n="side_ocean">Ocean Freight</span><span>FCL / LCL</span></a>
-              <a class="item" role="listitem" href="services/air-freight.html"><span data-i18n="side_air">Air Freight</span><span>Time-critical</span></a>
-              <a class="item" role="listitem" href="services/customs-brokerage.html"><span data-i18n="side_broker">Customs Brokerage</span><span>Compliance</span></a>
-              <a class="item" role="listitem" href="services/door-to-door.html"><span data-i18n="side_d2d">Door-to-Door</span><span>End-to-end</span></a>
-            </div>
-
-            <p style="margin:12px 0 0; color:var(--muted); font-size:12px;" data-i18n="side_note">
-              Special cargo available: Vehicles and regulated cargo types (as applicable).
-            </p>
-          </div>
-
-          <div class="cta-band">
-            <div>
-              <h4 data-i18n="side_cta_title">Ready to ship?</h4>
-              <p data-i18n="side_cta_sub">Send a request and we’ll follow up within 24 business hours.</p>
-            </div>
-            <a class="btn primary" href="quote.html" data-i18n="side_cta_btn">Start</a>
-          </div>
-        </aside>
+        <div class="hero-mini">
+          <div><b>Ocean &amp; Air</b><span>FCL / LCL / Time-critical</span></div>
+          <div><b>Door-to-Door</b><span>Pickup to final delivery</span></div>
+          <div><b>Special Cargo</b><span>Vehicles &amp; Hazmat</span></div>
+        </div>
       </div>
     </div>
   </main>
 
-
+  <!-- TRUST BAR -->
   <section class="trustbar" aria-label="Licenses and certifications">
     <div class="container">
       <p class="trustbar-title">Licenses &amp; Certifications</p>
       <div class="trustbar-logos">
-        <img src="assets/img/badge-tsa-iac.png" alt="Transportation Security Administration Approved IAC" loading="lazy">
-        <img src="assets/img/badge-ctpat.png" alt="C-TPAT (Customs-Trade Partnership Against Terrorism)" loading="lazy">
-        <img src="assets/img/badge-fmc.png" alt="Federal Maritime Commission (FMC)" loading="lazy">
+        <img src="assets/img/badge-tsa-iac.png" alt="TSA Approved IAC" loading="lazy">
+        <img src="assets/img/badge-ctpat.png" alt="C-TPAT" loading="lazy">
+        <img src="assets/img/badge-fmc.png" alt="Federal Maritime Commission" loading="lazy">
         <img src="assets/img/badge-iata.png" alt="IATA" loading="lazy">
         <img src="assets/img/badge-nvocc.png" alt="NVOCC" loading="lazy">
       </div>
     </div>
   </section>
 
-
-
-  <section id="services" class="section">
+  <!-- SERVICES -->
+  <section class="section" aria-label="Services">
     <div class="container">
-      <h3 data-i18n="services_h3">Services</h3>
-      <p class="sub" data-i18n="services_sub">
-        Licensed, compliant export logistics for shippers of all sizes — from one-time exporters to established importers buying from the U.S.
-      </p>
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Simple, compliant export solutions — with the right level of support for shippers of all sizes.</p>
+      </div>
 
       <div class="grid-3">
-        <a class="card" href="services/customs-brokerage.html">
-          <h4 data-i18n="card_broker">Customs Brokerage</h4>
-          <p data-i18n="card_broker_sub">Compliance-first brokerage support to keep entries accurate and cargo moving.</p>
+        <a class="service-card" href="services/ocean-freight.html">
+          <div class="service-img" style="background-image:url('assets/img/port.jpg');"></div>
+          <div class="service-body">
+            <h3>Ocean Freight (FCL / LCL)</h3>
+            <p>Export coordination, carrier booking, cutoffs, and documentation done right.</p>
+          </div>
         </a>
-        <a class="card" href="services/ocean-freight.html">
-          <h4 data-i18n="card_ocean">Ocean Freight (FCL &amp; LCL)</h4>
-          <p data-i18n="card_ocean_sub">Container and consolidation options matched to cargo type, volume, and timeline.</p>
+
+        <a class="service-card" href="services/air-freight.html">
+          <div class="service-img" style="background-image:url('assets/img/air.jpg');"></div>
+          <div class="service-body">
+            <h3>Air Freight</h3>
+            <p>Time-critical shipping with clear requirements and fast communication.</p>
+          </div>
         </a>
-        <a class="card" href="services/air-freight.html">
-          <h4 data-i18n="card_air">Air Freight</h4>
-          <p data-i18n="card_air_sub">Faster options for urgent shipments or high-value cargo.</p>
+
+        <a class="service-card" href="services/customs-brokerage.html">
+          <div class="service-img" style="background-image:url('assets/img/warehouse.jpg');"></div>
+          <div class="service-body">
+            <h3>Customs Brokerage</h3>
+            <p>Compliance-first brokerage guidance to reduce holds, delays, and rework.</p>
+          </div>
         </a>
-        <a class="card" href="services/door-to-door.html">
-          <h4 data-i18n="card_d2d">Door-to-Door Logistics</h4>
-          <p data-i18n="card_d2d_sub">Pickup, documentation, freight, and delivery coordination.</p>
+
+        <a class="service-card" href="services/warehousing.html">
+          <div class="service-img" style="background-image:url('assets/img/warehouse.jpg');"></div>
+          <div class="service-body">
+            <h3>Warehousing &amp; Consolidation</h3>
+            <p>Receiving, staging, and consolidation to keep your exports organized and on schedule.</p>
+          </div>
         </a>
-        <a class="card" href="services/warehousing.html">
-          <h4 data-i18n="card_wh">Warehousing &amp; Consolidation</h4>
-          <p data-i18n="card_wh_sub">Receiving, staging, consolidation, and export-ready preparation.</p>
+
+        <a class="service-card" href="services/door-to-door.html">
+          <div class="service-img" style="background-image:url('assets/img/hero.jpg');"></div>
+          <div class="service-body">
+            <h3>Door-to-Door Logistics</h3>
+            <p>Pickup to final delivery coordination — one point of contact end-to-end.</p>
+          </div>
         </a>
-        <a class="card" href="services/special-cargo.html">
-          <h4 data-i18n="card_special">Vehicles &amp; Hazardous Cargo</h4>
-          <p data-i18n="card_special_sub">Special handling and documentation for vehicles and regulated cargo types.</p>
+
+        <a class="service-card" href="services/special-cargo.html">
+          <div class="service-img" style="background-image:url('assets/img/port.jpg');"></div>
+          <div class="service-body">
+            <h3>Vehicles &amp; Hazardous Cargo</h3>
+            <p>Special handling and documentation support where applicable.</p>
+          </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LUFRAN -->
+  <section class="section alt" aria-label="Why Lufran">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Lufran</h2>
+        <p>We’re built for exporters who want accuracy, speed, and clear communication.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Established &amp; experienced</h3>
+          <p>Established in 1998 — decades of practical export forwarding experience from Miami.</p>
+        </div>
+        <div class="card">
+          <h3>Compliance-first</h3>
+          <p>We prioritize correct documentation and requirements to prevent avoidable delays.</p>
+        </div>
+        <div class="card">
+          <h3>Clear communication</h3>
+          <p>Proactive updates and straightforward guidance — no guessing, no runaround.</p>
+        </div>
       </div>
 
       <div class="split">
+        <div class="panel">
+          <div class="body">
+            <h3>Worldwide coverage</h3>
+            <p>
+              While we have deep expertise into the Caribbean and Central America, we can support exports worldwide.
+              If you’re not sure what service you need, submit a request — we’ll guide you.
+            </p>
+            <div class="cta-actions">
+              <a class="btn primary" href="quote.html">Request a Quote</a>
+              <a class="btn ghost" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
         <div class="panel port">
-          <div class="img" aria-hidden="true"></div>
           <div class="body">
-            <h4 data-i18n="panel_ocean_title">Ocean export coordination</h4>
-            <p data-i18n="panel_ocean_sub">Cutoffs, documentation, compliance, loading — coordinated with clarity and speed.</p>
-          </div>
-        </div>
-
-        <div class="panel air">
-          <div class="img" aria-hidden="true"></div>
-          <div class="body">
-            <h4 data-i18n="panel_air_title">Air freight when time matters</h4>
-            <p data-i18n="panel_air_sub">Proactive handling, accurate paperwork, and communication you can rely on.</p>
+            <h3>What we’ll confirm to quote accurately</h3>
+            <ul class="list">
+              <li>Ocean FCL vs LCL, or Air</li>
+              <li>Dimensions/weight (required for LCL/Air)</li>
+              <li>Pickup/delivery needs and timeline</li>
+              <li>Commodity + special handling (vehicles/hazmat)</li>
+              <li>Destination requirements and handoff</li>
+            </ul>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <section class="section alt" id="about">
+  <!-- CTA -->
+  <section class="section" aria-label="CTA">
     <div class="container">
-      <h3 data-i18n="about_h3">About Lufran</h3>
-      <p class="sub" data-i18n="about_sub">
-        Established in 1998, Lufran International Corp supports exporters and international buyers with hands-on coordination, compliant documentation, and clear communication.
-      </p>
-
-      <div class="grid-3">
-        <div class="card">
-          <h4 data-i18n="about_1">28+ years of experience</h4>
-          <p data-i18n="about_1_sub">Built on consistent execution across ocean, air, and door-to-door export flows.</p>
-        </div>
-        <div class="card">
-          <h4 data-i18n="about_2">Licensed &amp; compliant</h4>
-          <p data-i18n="about_2_sub">FMC Licensed, NVOCC, and U.S. Customs Broker credentials.</p>
-        </div>
-        <div class="card">
-          <h4 data-i18n="about_3">Responsive communication</h4>
-          <p data-i18n="about_3_sub">You’ll know what we need, what’s next, and where the shipment stands.</p>
-        </div>
-      </div>
-
-      <div class="cta-band">
+      <div class="cta-band big">
         <div>
-          <h4 data-i18n="about_cta_title">Want the full story?</h4>
-          <p data-i18n="about_cta_sub">Learn more about our team, process, and how we keep exports moving.</p>
+          <h2>Request a quote in minutes</h2>
+          <p>Share the basics and our team will reach out within 24 business hours to confirm details and pricing.</p>
         </div>
-        <a class="btn primary" href="about.html" data-i18n="about_cta_btn">Visit About Us</a>
+        <a class="btn primary" href="quote.html">Request a Quote</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h3 data-i18n="contact_h3">Contact</h3>
-      <p class="sub" data-i18n="contact_sub">Tell us what you’re shipping and where it’s going — we’ll guide you to the best option.</p>
-
-      <div class="cta-band">
-        <div>
-          <h4 data-i18n="help_title">Need help right now?</h4>
-          <p data-i18n="help_sub">Call or email and we’ll walk you through the fastest path to ship.</p>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a class="btn primary" href="tel:+1XXXXXXXXXX" data-i18n="help_call">Call Us</a>
-          <a class="btn ghost" href="mailto:info@yourdomain.com" data-i18n="help_email">Email Us</a>
-          <a class="btn ghost" href="quote.html" data-i18n="help_quote">Request a Quote</a>
-        </div>
+  <!-- NEED HELP NOW -->
+  <section class="helpbar" aria-label="Need help now">
+    <div class="container help-inner">
+      <div>
+        <h3>Need help now?</h3>
+        <p>Call or email — we’ll guide you through the next steps.</p>
       </div>
-
-      <p style="margin:14px 0 0; color:var(--muted); font-size:12px;" data-i18n="help_note">
-        Quote forms will be connected after the operations backend is live. For now, the quote page can be a simple request form.
-      </p>
+      <div class="help-actions">
+        <a class="btn ghost" href="tel:+1XXXXXXXXXX">Call Us</a>
+        <a class="btn ghost" href="mailto:info@yourdomain.com">Email Us</a>
+      </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer" aria-label="Footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <img src="assets/img/logo-960x300.png" alt="Lufran International Corp" style="height:44px; width:auto; margin-bottom:10px;">
-          <p><b data-i18n="footer_tagline">Your logistics partner in Central America &amp; the Caribbean — with worldwide coverage.</b></p>
-          <p data-i18n="footer_cred">Licensed U.S. Customs Broker &amp; Export Freight Forwarder • Established 1998</p>
+          <img src="assets/img/lufran_logo_trimmed.png" alt="Lufran International Corp" class="footer-logo">
+          <p><b>Your logistics partner in Central America &amp; the Caribbean — with worldwide coverage.</b></p>
+          <p>Licensed U.S. Customs Broker &amp; Export Freight Forwarder • Established 1998</p>
         </div>
 
         <div>
-          <h5 data-i18n="footer_contact">Contact</h5>
-          <p data-i18n="footer_loc">Miami, Florida</p>
+          <h4>Contact</h4>
+          <p>Miami, Florida</p>
           <p><a href="tel:+1XXXXXXXXXX">Phone: +1 (XXX) XXX-XXXX</a></p>
           <p><a href="mailto:info@yourdomain.com">Email: info@yourdomain.com</a></p>
         </div>
 
         <div>
-          <h5 data-i18n="footer_links">Quick Links</h5>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
-            <li><a href="quote.html" data-i18n="nav_quote">Request a Quote</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
 
         <div>
-          <h5 data-i18n="footer_services">Services</h5>
+          <h4>Services</h4>
           <ul>
-            <li><a href="services/ocean-freight.html" data-i18n="svc_ocean">Ocean Freight (FCL/LCL)</a></li>
-            <li><a href="services/air-freight.html" data-i18n="svc_air">Air Freight</a></li>
-            <li><a href="services/customs-brokerage.html" data-i18n="svc_broker">Customs Brokerage</a></li>
-            <li><a href="services/warehousing.html" data-i18n="svc_wh">Warehousing &amp; Consolidation</a></li>
-            <li><a href="services/special-cargo.html" data-i18n="svc_special">Vehicles &amp; Hazardous Cargo</a></li>
+            <li><a href="services/ocean-freight.html">Ocean Freight (FCL/LCL)</a></li>
+            <li><a href="services/air-freight.html">Air Freight</a></li>
+            <li><a href="services/customs-brokerage.html">Customs Brokerage</a></li>
+            <li><a href="services/warehousing.html">Warehousing &amp; Consolidation</a></li>
+            <li><a href="services/special-cargo.html">Vehicles &amp; Hazardous Cargo</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>© <span id="y"></span> Lufran International Corp. All rights reserved.</div>
+        <div>© <span class="js-year"></span> Lufran International Corp. All rights reserved.</div>
         <div>FMC Licensed • NVOCC • U.S. Customs Broker</div>
       </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    // footer year
+    document.querySelectorAll(".js-year").forEach(el => el.textContent = new Date().getFullYear());
 
-    const dict = {
-      en: {
-        nav_home:"Home", nav_services:"Services ▾", nav_about:"About Us", nav_contact:"Contact", nav_quote:"Request a Quote",
-        hero_pill:"Established 1998 • Miami, FL • Licensed & Compliant",
-        hero_h1:"Miami Export Freight Forwarding<br />&amp; U.S. Customs Brokerage",
-        hero_lead:"Door-to-door ocean and air solutions worldwide — with deep experience shipping into the Caribbean and Central America.",
-        trust_world:"Worldwide Coverage",
-        hero_lanes:"Common destinations we handle often: Dominican Republic • El Salvador • Costa Rica (and many more).",
-        cta_quote:"Request a Quote", cta_call:"Call for a Fast Quote",
-        hero_footer:"Clear communication, accurate documentation, and proactive coordination from pickup to delivery.",
-        side_title:"What we handle",
-        side_sub:"A quick overview — each service has a dedicated page with the process and what we need to quote.",
-        side_ocean:"Ocean Freight", side_air:"Air Freight", side_broker:"Customs Brokerage", side_d2d:"Door-to-Door",
-        side_note:"Special cargo available: Vehicles and regulated cargo types (as applicable).",
-        side_cta_title:"Ready to ship?", side_cta_sub:"Send a request and we’ll follow up within 24 business hours.", side_cta_btn:"Start",
-        services_h3:"Services",
-        services_sub:"Licensed, compliant export logistics for shippers of all sizes — from one-time exporters to established importers buying from the U.S.",
-        card_broker:"Customs Brokerage", card_broker_sub:"Compliance-first brokerage support to keep entries accurate and cargo moving.",
-        card_ocean:"Ocean Freight (FCL & LCL)", card_ocean_sub:"Container and consolidation options matched to cargo type, volume, and timeline.",
-        card_air:"Air Freight", card_air_sub:"Faster options for urgent shipments or high-value cargo.",
-        card_d2d:"Door-to-Door Logistics", card_d2d_sub:"Pickup, documentation, freight, and delivery coordination.",
-        card_wh:"Warehousing & Consolidation", card_wh_sub:"Receiving, staging, consolidation, and export-ready preparation.",
-        card_special:"Vehicles & Hazardous Cargo", card_special_sub:"Special handling and documentation for vehicles and regulated cargo types.",
-        panel_ocean_title:"Ocean export coordination", panel_ocean_sub:"Cutoffs, documentation, compliance, loading — coordinated with clarity and speed.",
-        panel_air_title:"Air freight when time matters", panel_air_sub:"Proactive handling, accurate paperwork, and communication you can rely on.",
-        about_h3:"About Lufran",
-        about_sub:"Established in 1998, Lufran International Corp supports exporters and international buyers with hands-on coordination, compliant documentation, and clear communication.",
-        about_1:"28+ years of experience", about_1_sub:"Built on consistent execution across ocean, air, and door-to-door export flows.",
-        about_2:"Licensed & compliant", about_2_sub:"FMC Licensed, NVOCC, and U.S. Customs Broker credentials.",
-        about_3:"Responsive communication", about_3_sub:"You’ll know what we need, what’s next, and where the shipment stands.",
-        about_cta_title:"Want the full story?", about_cta_sub:"Learn more about our team, process, and how we keep exports moving.", about_cta_btn:"Visit About Us",
-        contact_h3:"Contact", contact_sub:"Tell us what you’re shipping and where it’s going — we’ll guide you to the best option.",
-        help_title:"Need help right now?", help_sub:"Call or email and we’ll walk you through the fastest path to ship.",
-        help_call:"Call Us", help_email:"Email Us", help_quote:"Request a Quote",
-        help_note:"Quote forms will be connected after the operations backend is live. For now, the quote page can be a simple request form.",
-        footer_tagline:"Your logistics partner in Central America & the Caribbean — with worldwide coverage.",
-        footer_cred:"Licensed U.S. Customs Broker & Export Freight Forwarder • Established 1998",
-        footer_contact:"Contact", footer_loc:"Miami, Florida", footer_links:"Quick Links", footer_services:"Services",
-        svc_ocean:"Ocean Freight (FCL/LCL)", svc_ocean_sub:"Export coordination, cutoffs, documentation",
-        svc_air:"Air Freight", svc_air_sub:"Time-critical shipping and handling",
-        svc_broker:"Customs Brokerage", svc_broker_sub:"Compliance-first brokerage support",
-        svc_wh:"Warehousing & Consolidation", svc_wh_sub:"Receiving, staging, consolidation",
-        svc_d2d:"Door-to-Door Logistics", svc_d2d_sub:"Pickup to final delivery coordination",
-        svc_special:"Vehicles & Hazardous Cargo", svc_special_sub:"Special handling when applicable"
-      },
-      es: {
-        nav_home:"Inicio", nav_services:"Servicios ▾", nav_about:"Nosotros", nav_contact:"Contacto", nav_quote:"Solicitar Cotización",
-        hero_pill:"Fundada en 1998 • Miami, FL • Licencias y Cumplimiento",
-        hero_h1:"Exportación de Carga desde Miami<br />y Agencia de Aduanas en EE. UU.",
-        hero_lead:"Soluciones puerta a puerta por mar y aire a nivel mundial — con amplia experiencia en el Caribe y Centroamérica.",
-        trust_world:"Cobertura Global",
-        hero_lanes:"Destinos frecuentes: República Dominicana • El Salvador • Costa Rica (y muchos más).",
-        cta_quote:"Solicitar Cotización", cta_call:"Llamar para Cotizar Rápido",
-        hero_footer:"Comunicación clara, documentación precisa y coordinación proactiva de principio a fin.",
-        side_title:"Lo que manejamos",
-        side_sub:"Resumen rápido — cada servicio tendrá su página con el proceso y lo que necesitamos para cotizar.",
-        side_ocean:"Flete Marítimo", side_air:"Flete Aéreo", side_broker:"Agencia de Aduanas", side_d2d:"Puerta a Puerta",
-        side_note:"Carga especial: vehículos y carga regulada (según aplique).",
-        side_cta_title:"¿Listo para enviar?", side_cta_sub:"Envíe su solicitud y respondemos dentro de 24 horas hábiles.", side_cta_btn:"Empezar",
-        services_h3:"Servicios",
-        services_sub:"Logística de exportación con licencias y cumplimiento — para todo tipo de exportadores.",
-        card_broker:"Agencia de Aduanas", card_broker_sub:"Soporte enfocado en cumplimiento para mantener su carga en movimiento.",
-        card_ocean:"Flete Marítimo (FCL & LCL)", card_ocean_sub:"Opciones de contenedor y consolidación según su carga y tiempo.",
-        card_air:"Flete Aéreo", card_air_sub:"Opciones rápidas para envíos urgentes o de alto valor.",
-        card_d2d:"Logística Puerta a Puerta", card_d2d_sub:"Recogida, documentación, flete y coordinación de entrega final.",
-        card_wh:"Almacén y Consolidación", card_wh_sub:"Recepción, staging, consolidación y preparación para exportación.",
-        card_special:"Vehículos y Carga Peligrosa", card_special_sub:"Manejo especial y documentos para carga regulada.",
-        panel_ocean_title:"Coordinación de exportación marítima", panel_ocean_sub:"Cutoffs, documentos, cumplimiento y carga — con claridad y rapidez.",
-        panel_air_title:"Aéreo cuando el tiempo importa", panel_air_sub:"Manejo proactivo, documentos correctos y comunicación confiable.",
-        about_h3:"Sobre Lufran",
-        about_sub:"Fundada en 1998, Lufran apoya a exportadores y compradores internacionales con coordinación práctica y comunicación clara.",
-        about_1:"28+ años de experiencia", about_1_sub:"Ejecución consistente por mar, aire y puerta a puerta.",
-        about_2:"Licencias y cumplimiento", about_2_sub:"FMC, NVOCC y Agencia de Aduanas en EE. UU.",
-        about_3:"Comunicación rápida", about_3_sub:"Sabrás qué necesitamos y cuál es el siguiente paso.",
-        about_cta_title:"¿Quieres más detalles?", about_cta_sub:"Conoce nuestro equipo, proceso y cómo mantenemos tus exportaciones avanzando.", about_cta_btn:"Ver Nosotros",
-        contact_h3:"Contacto", contact_sub:"Cuéntanos qué envías y a dónde — te guiaremos a la mejor opción.",
-        help_title:"¿Necesitas ayuda ahora?", help_sub:"Llama o escribe y te guiamos por el camino más rápido.",
-        help_call:"Llamar", help_email:"Email", help_quote:"Solicitar Cotización",
-        help_note:"Los formularios se conectarán cuando el backend esté listo. Por ahora, la página de cotización puede ser simple.",
-        footer_tagline:"Tu socio logístico en Centroamérica y el Caribe — con cobertura global.",
-        footer_cred:"Agencia de Aduanas en EE. UU. y Freight Forwarder • Fundada en 1998",
-        footer_contact:"Contacto", footer_loc:"Miami, Florida", footer_links:"Enlaces", footer_services:"Servicios",
-        svc_ocean:"Flete Marítimo (FCL/LCL)", svc_ocean_sub:"Coordinación y documentación",
-        svc_air:"Flete Aéreo", svc_air_sub:"Envíos urgentes",
-        svc_broker:"Agencia de Aduanas", svc_broker_sub:"Cumplimiento",
-        svc_wh:"Almacén y Consolidación", svc_wh_sub:"Recepción y staging",
-        svc_d2d:"Puerta a Puerta", svc_d2d_sub:"De origen a destino",
-        svc_special:"Vehículos y Carga Peligrosa", svc_special_sub:"Manejo especial"
-      }
-    };
-
-    let lang = "en";
-    const toggle = document.getElementById("langToggle");
-    function applyLang(next){
-      lang = next;
-      document.querySelectorAll("[data-i18n]").forEach(el=>{
-        const key = el.getAttribute("data-i18n");
-        if(dict[lang] && dict[lang][key]){
-          el.innerHTML = dict[lang][key];
-        }
+    // mobile menu toggle
+    const btn = document.querySelector(".hamburger");
+    const menu = document.querySelector(".mobile-menu");
+    if (btn && menu) {
+      btn.addEventListener("click", () => {
+        const open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!open));
+        menu.hidden = open;
       });
-      toggle.textContent = (lang === "en") ? "EN / ES" : "ES / EN";
-      document.documentElement.setAttribute("lang", lang);
     }
-    toggle.addEventListener("click", ()=> applyLang(lang === "en" ? "es" : "en"));
-
-    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
