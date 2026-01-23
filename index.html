@@ -8,6 +8,16 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Trust bar (licenses & certifications) -->
+  <style>
+    .trustbar{ padding:18px 0; border-top:1px solid rgba(15,23,42,.08); border-bottom:1px solid rgba(15,23,42,.08); background:rgba(15,23,42,.02); }
+    .trustbar .trustbar-title{ margin:0 0 10px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:rgba(15,23,42,.75); }
+    .trustbar-logos{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:space-between; }
+    .trustbar-logos img{ max-height:44px; width:auto; filter:saturate(.95) contrast(1.02); opacity:.95; }
+    @media (max-width:700px){ .trustbar-logos{ justify-content:flex-start; } .trustbar-logos img{ max-height:38px; } }
+  </style>
+
 </head>
 
 <body>
@@ -129,6 +139,22 @@
       </div>
     </div>
   </main>
+
+
+  <section class="trustbar" aria-label="Licenses and certifications">
+    <div class="container">
+      <p class="trustbar-title">Licenses &amp; Certifications</p>
+      <div class="trustbar-logos">
+        <img src="assets/img/badge-tsa-iac.png" alt="Transportation Security Administration Approved IAC" loading="lazy">
+        <img src="assets/img/badge-ctpat.png" alt="C-TPAT (Customs-Trade Partnership Against Terrorism)" loading="lazy">
+        <img src="assets/img/badge-fmc.png" alt="Federal Maritime Commission (FMC)" loading="lazy">
+        <img src="assets/img/badge-iata.png" alt="IATA" loading="lazy">
+        <img src="assets/img/badge-nvocc.png" alt="NVOCC" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
 
   <section id="services" class="section">
     <div class="container">
