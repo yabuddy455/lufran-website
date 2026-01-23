@@ -7,8 +7,28 @@
   <meta name="description" content="Request a quote for ocean freight, air freight, customs brokerage, warehousing, or door-to-door logistics." />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Quote page helpers -->
+  <style>
+    .quote-wrap { padding: 56px 0; }
+    .quote-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; align-items: start; }
+    .quote-card { background: #fff; border: 1px solid rgba(15,23,42,.10); border-radius: 18px; padding: 18px; }
+    .quote-card h4 { margin: 0 0 10px; }
+    .quote-note { color: rgba(15,23,42,.70); font-size: 14px; line-height: 1.5; margin: 0 0 10px; }
+    .quote-bullets { margin: 10px 0 0; padding-left: 18px; color: rgba(15,23,42,.70); display: grid; gap: 8px; }
+    .hs-form-frame { width: 100%; }
+    .hs-form-frame iframe { width: 100% !important; min-height: 680px; border: 0; }
+
+    @media (max-width: 900px){
+      .quote-grid { grid-template-columns: 1fr; }
+      .quote-wrap { padding: 42px 0; }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Header / Navbar -->
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html" aria-label="Lufran International Corp home">
@@ -41,61 +61,74 @@
       </div>
     </div>
   </header>
-<main class="section">
-  <div class="container">
-    <h3>Request a Quote</h3>
-    <p class="sub">Fill out the form below and a team member will reach out within 24 business hours to confirm details and provide pricing.</p>
 
-    <div class="split">
-      <div class="panel">
-        <div class="body">
+  <!-- Main -->
+  <main class="quote-wrap">
+    <div class="container">
+      <h3>Request a Quote</h3>
+      <p class="sub">
+        Submit the form below and a team member will reach out within 24 business hours to confirm details and provide pricing.
+      </p>
+
+      <div class="quote-grid">
+
+        <!-- HubSpot Form Column -->
+        <section class="quote-card" aria-label="Quote request form">
           <h4>Quote Request Form</h4>
-          <form class="card" style="margin-top:14px;" action="#" method="post">
-            <div style="display:grid; gap:10px;">
-              <label><b>Full Name</b><br><input required type="text" name="name" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Company</b><br><input type="text" name="company" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Email</b><br><input required type="email" name="email" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Phone</b><br><input type="tel" name="phone" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
+          <p class="quote-note">
+            For the fastest quote, include accurate weight/dimensions (especially for LCL/Air), commodity description, and destination details.
+          </p>
 
-              <label><b>Service Type</b><br>
-                <select name="service" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);">
-                  <option>Ocean Freight (FCL)</option>
-                  <option>Ocean Freight (LCL)</option>
-                  <option>Air Freight</option>
-                  <option>Customs Brokerage</option>
-                  <option>Warehousing / Consolidation</option>
-                  <option>Door-to-Door Logistics</option>
-                  <option>Vehicles / Special Cargo</option>
-                </select>
-              </label>
+          <!-- HubSpot Embed (your code) -->
+          <script src="https://js-na2.hsforms.net/forms/embed/244801552.js" defer></script>
+          <div
+            class="hs-form-frame"
+            data-region="na2"
+            data-form-id="c1028d69-d5f0-4210-87ce-cff3d2dc65c1"
+            data-portal-id="244801552">
+          </div>
 
-              <label><b>Origin (City/State/Country)</b><br><input type="text" name="origin" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Destination (City/Country)</b><br><input type="text" name="destination" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Commodity</b><br><input type="text" name="commodity" style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></label>
-              <label><b>Shipment Details</b><br><textarea name="details" rows="5" placeholder="Weight, dimensions (if LCL/air), number of packages, special handling, desired ship date..." style="width:100%; padding:12px; border-radius:12px; border:1px solid var(--line);"></textarea></label>
+          <noscript>
+            <p class="quote-note">
+              JavaScript is required to load the form. Please enable it, or email
+              <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>.
+            </p>
+          </noscript>
+        </section>
 
-              <button class="btn primary" type="submit">Send Request</button>
-              <p style="margin:0; color:var(--muted); font-size:12px;">Placeholder form — we’ll connect this to your CRM/workflows later.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="panel port">
-        <div class="img" aria-hidden="true" style="height:260px;"></div>
-        <div class="body">
+        <!-- Right Column: What Happens Next -->
+        <aside class="quote-card" aria-label="What happens next">
           <h4>What happens next?</h4>
-          <p>We’ll confirm details (FCL vs LCL, dimensions, pickup needs, destination clearance, delivery) and then provide the best option with clear steps.</p>
-          <div class="cta-band" style="margin-top:14px;">
-            <div><h4>Need help immediately?</h4><p>Call us and we’ll collect the details quickly.</p></div>
+          <p class="quote-note">
+            After you submit, we verify key details to quote accurately and avoid surprises.
+          </p>
+
+          <ul class="quote-bullets">
+            <li>Confirm service type (Ocean FCL/LCL, Air, Door-to-Door)</li>
+            <li>Confirm dimensions/weight and packaging (required for LCL/Air)</li>
+            <li>Verify pickup/delivery requirements and timelines</li>
+            <li>Confirm any special handling (hazardous, vehicles, regulated items)</li>
+            <li>Provide a clear quote and next steps</li>
+          </ul>
+
+          <div class="cta-band" style="margin-top:16px;">
+            <div>
+              <h4>Need help now?</h4>
+              <p>Call us and we’ll collect the details quickly.</p>
+            </div>
             <a class="btn primary" href="tel:+1XXXXXXXXXX">Call</a>
           </div>
-        </div>
+
+          <div style="margin-top:14px; color:rgba(15,23,42,.70); font-size:13px;">
+            <b>Tip:</b> If you have a commercial invoice or packing list, mention it — it speeds up quoting.
+          </div>
+        </aside>
+
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
+  <!-- Footer -->
   <footer class="footer" aria-label="Footer">
     <div class="container">
       <div class="footer-grid">
